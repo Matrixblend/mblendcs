@@ -1,5 +1,6 @@
-import React, { Component, navigate } from "react"
+import React, { Component } from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp"
+import { navigate } from "@reach/router"
 
 export class EmailForm extends Component {
   constructor() {
@@ -18,19 +19,26 @@ export class EmailForm extends Component {
       fields,
     }).then(data => {
       if (data.result === "error") {
-        // this.setState(data.msg[0]);
+        // if message mentioned already subcribed send user to auth page with email address matched to the mailchimp data.
+        let subscribed = data.msg.match(/subscrib/g)
+        let tooMany = data.msg.match(/too/g)
+        if (subscribed) {
+          navigate("/user", {
+            state: { message: data.msg, email: email },
+            replace: true,
+          })
 
+          console.log("You are now logged in " + email)
+        }
+        if (tooMany) {
+          console.log("Too many Request change email. Or come back later")
+        }
         this.setState({ message: data.msg })
       } else {
         // confirm
         this.setState({ message: data.msg })
-        navigate("/confirm",
-          {replace: true}
-        )
+        navigate("/confirm", { state: { message: data.msg }, replace: true })
       }
-      setTimeout(() => {
-        this.setState({ message: "" })
-      }, 3000)
     })
   }
 

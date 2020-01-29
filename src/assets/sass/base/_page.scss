@@ -76,10 +76,10 @@ body,
   }
 
   @include breakpoint('<=small') {
-    padding: 5em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
   }
 
   @include breakpoint('<=xxsmall') {
-    padding: 5em 1.25em 1.25em 1.25em;
+    padding: 2em 1.25em 1.25em 1.25em;
   }
 }

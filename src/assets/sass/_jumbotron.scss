@@ -1,0 +1,37 @@
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  color: $jumbotron-color;
+  background-color: $jumbotron-bg;
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+  border: 0;
+    height: 45vh;
+    margin: 0;
+    // width: 100%;
+    display: flex;
+    padding-top: 20px;
+    overflow: hidden;
+    align-items: center;
+    background-size: cover;
+    background-position: 50%;
+
+}
+video {
+  // margin: -342px;
+  // position: inherit;
+  // padding-top: 20px;
+  // width: 161%;
+  // height: 547px;
+  // background: black;
+
+}

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 import "../assets/sass/main.scss"
 import SEO from "./SEO"
+import Footer from "./Footer"
 
 class Layout extends Component {
   constructor() {
@@ -27,6 +28,7 @@ class Layout extends Component {
         <div className={isPreloaded ? "main-body is-preload" : "main-body"}>
           {children}
         </div>
+        <Footer />
       </>
     )
   }

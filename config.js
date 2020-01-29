@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "Matrixblend Media - Relaunce", // <title>
+  siteTitle: "Matrixblend Media - Relaunch", // <title>
   manifestName: "Matrixblend Media",
   manifestShortName: "Landing", // max 12 character
   manifestStartUrl: "/",

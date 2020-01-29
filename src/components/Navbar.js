@@ -1,41 +1,27 @@
 import React from "react"
-import image from "../assets/img/website-icon.png"
+import { Navbar, Nav } from "react-bootstrap"
+import { Link } from "gatsby"
 
-export default function Navbar() {
-  return (
-    <>
-      <Navbar bg="light">
-        <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-      </Navbar>
-      <br />
-      <Navbar bg="light">
-        <Navbar.Brand>Brand text</Navbar.Brand>
-      </Navbar>
-      <br />
-      <Navbar bg="dark">
-        <Navbar.Brand href="#">
-          <img
-            src={image}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
-        </Navbar.Brand>
-      </Navbar>
-      <br />
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
-          <img
-            alt=""
-            src="/logo.svg"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />{" "}
-          React Bootstrap
-        </Navbar.Brand>
-      </Navbar>
-    </>
-  )
-}
+export default props => (
+  <Navbar bg="light" expand="lg">
+    <Navbar.Brand href="/">Matrixblend Media</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="mr-auto">
+        <Nav.Link as={Link} to="/">
+          Home
+        </Nav.Link>
+        <Nav.Link as={Link} to="/about">
+          {" "}
+          About
+        </Nav.Link>
+        <Nav.Link as={Link} to="/music">
+          Music
+        </Nav.Link>
+        <Nav.Link as={Link} to="/contact">
+          Contact us
+        </Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+)
