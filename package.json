@@ -23,6 +23,8 @@
     "gatsby-plugin-offline": "^2.1.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-source-filesystem": "^2.1.47",
+    "gatsby-transformer-remark": "^2.6.49",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
@@ -33,8 +35,8 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "npm run clean && gatsby build",
+    "develop": "gatsby develop && webpack --config webpack.config.dev.js",
+    "build": "npm run clean && gatsby build && webpack --config webpack.config.build.js",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

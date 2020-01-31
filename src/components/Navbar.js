@@ -3,11 +3,11 @@ import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 
 export default props => (
-  <Navbar bg="light" expand="lg">
+  <Navbar bg="none" expand="lg">
     <Navbar.Brand href="/">Matrixblend Media</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
+    <Navbar.Collapse id="basic-navbar-nav ">
+      <Nav className="navbar-right">
         <Nav.Link as={Link} to="/">
           Home
         </Nav.Link>
@@ -15,9 +15,9 @@ export default props => (
           {" "}
           About
         </Nav.Link>
-        <Nav.Link as={Link} to="/music">
+        {/* <Nav.Link as={Link} to="/music">
           Music
-        </Nav.Link>
+        </Nav.Link> */}
         <Nav.Link as={Link} to="/contact">
           Contact us
         </Nav.Link>

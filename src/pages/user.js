@@ -3,18 +3,17 @@ import UserLayout from "../components/UserLayout"
 
 export default props => (
   <UserLayout>
-    <h1>Welcome to the User Page</h1>
-    <p>Your User name is {props.email}</p>
-    <p>Please check your email for our latest mailing.</p>
+    <h1>Welcome to Matrixblend Media. </h1>
+    <p dangerouslySetInnerHTML={{ __html: props.state.message }}></p>
+
     <p>
-      Below is a list of services that we provide to help speed up your
-      development process
+      You will be receiving an email with a link to the ebook that is a guide to
+      your creative journey.{" "}
     </p>
-    <p>Fiverr, </p>
     <p>
-      This is the begining portal of the Matrixblend universe. As we grow you
-      will dicover more tools that you can use
-      immedatelybundleRenderer.renderToStream
+      In this ebook I reveal under reconginzed tools and strategies that work.
+      You will find small hustles that can get you earning extra money, all
+      while keeping your creative integrity.
     </p>
     <p>Matrixblend Media will keep you inspired with insights and ideas.</p>
   </UserLayout>

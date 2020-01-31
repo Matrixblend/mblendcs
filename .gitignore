@@ -8,3 +8,5 @@ yarn.lock
 # Build directory
 /public
 .DS_Store
+webpack.config.Build.js
+webpack.config.dev.js

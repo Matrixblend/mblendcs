@@ -27,17 +27,15 @@ export class EmailForm extends Component {
             state: { message: data.msg, email: email },
             replace: true,
           })
-
-          console.log("You are now logged in " + email)
         }
         if (tooMany) {
-          console.log("Too many Request change email. Or come back later")
         }
+
         this.setState({ message: data.msg })
       } else {
         // confirm
         this.setState({ message: data.msg })
-        navigate("/confirm", { state: { message: data.msg }, replace: true })
+        navigate("/user", { state: { message: data.msg }, replace: true })
       }
     })
   }

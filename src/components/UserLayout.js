@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import Navbar from "./Navbar"
-import "../assets/sass/main.scss"
+// import "../assets/sass/main.scss"
 import SEO from "./SEO"
 import Footer from "./Footer"
 

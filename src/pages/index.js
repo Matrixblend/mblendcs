@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import Header from "../components/Header"
 import EmailForm from "../components/EmailForm"
 import SlideShow from "../components/SlideShow"
-
+import Navbar from "../components/Navbar"
 var settings = {
   images: [
     { url: require("../assets/images/bg01.jpg"), position: "center" },
@@ -17,6 +17,7 @@ var settings = {
 
 const IndexPage = () => (
   <Layout>
+    <Navbar />
     <Header />
     <EmailForm />
 
