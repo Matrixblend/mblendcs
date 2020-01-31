@@ -1,10 +1,12 @@
 import React from "react"
 import UserLayout from "../components/UserLayout"
+import PropTypes from 'prop-types'
 
-export default props => (
+let props = {}
+export default (props) => (
   <UserLayout>
     <h1>Welcome to Matrixblend Media. </h1>
-    <p dangerouslySetInnerHTML={{ __html: props.state.message }}></p>
+    {/* <p dangerouslySetInnerHTML={{ __html: props.state.message }}></p> */}
 
     <p>
       You will be receiving an email with a link to the ebook that is a guide to
@@ -18,3 +20,6 @@ export default props => (
     <p>Matrixblend Media will keep you inspired with insights and ideas.</p>
   </UserLayout>
 )
+props.propTypes = {
+message : PropTypes.object
+}
