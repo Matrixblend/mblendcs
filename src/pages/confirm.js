@@ -10,7 +10,7 @@ const Confirmation = props => (
 
     {/* If they pay Send them login information. Email with side hustles they can do immediately. */}
 
-    <div>PROPS: {props.location.state.message} </div>
+    {/* <div>PROPS: {props.location.state.message} </div> */}
     <Footer />
   </Layout>
 )
