@@ -52,7 +52,7 @@ export class EmailForm extends Component {
           placeholder="Email Address"
         />
 
-        <input type="submit" value="Sign Up" />
+        {/* <input type="submit" value="Sign Up" /> */}
         <span className={`${message ? "visible success" : ""} message`}>
           <span dangerouslySetInnerHTML={{ __html: message }} />
         </span>
