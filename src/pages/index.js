@@ -17,7 +17,7 @@ var settings = {
 
 const IndexPage = () => (
   <Layout>
-    <Navbar />
+   
     <Header />
     <EmailForm />
 
