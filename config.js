@@ -11,22 +11,22 @@ module.exports = {
   // social
   heading: "Matrixblend Media",
   subHeading:
-    "Influence ideas, insight and inspiration. Download the free Technology tools ebook below.",
+    "Influence ideas, insight and inspiration. Download the free Tech Tools ebook by entering your info below.",
   socialLinks: [
     {
       icon: "fa-github",
       name: "Github",
-      url: "https://github.com/jhead12",
+      url: "https://github.com/jhead12/",
     },
     {
       icon: "fa-twitter",
       name: "Twitter",
-      url: "https://twitter.com/matrixblend",
+      url: "https://twitter.com/matrixblend/",
     },
     {
       icon: "fa-facebook",
       name: "Facebook",
-      url: "https://facebook.com/matrixblend",
+      url: "https://facebook.com/matrixblend/",
     },
     {
       icon: "fa-envelope-o",
