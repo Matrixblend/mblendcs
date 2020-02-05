@@ -44,7 +44,7 @@ export class EmailForm extends Component {
     const { message } = this.state
     return (
       <form id="signup-form" onSubmit={this.onSubmit} method="post" action="#">
-        <input type="text" name="FNAME" id="text" placeholder="Name" />
+        {/* <input type="text" name="FNAME" id="text" placeholder="Name" /> */}
         <input
           type="email"
           name="email"
