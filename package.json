@@ -1,6 +1,9 @@
 {
   "name": "gatsby-starter-eventually",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=18 <24"
+  },
   "description": "Gatsby.js V2 starter template based on Eventually by HTML5 UP",
   "repository": {
     "type": "git",
@@ -26,7 +29,7 @@
     "gatsby-source-filesystem": "^2.1.47",
     "gatsby-transformer-remark": "^2.6.49",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.1",
+    "sass": "^1.64.0",
     "popper.js": "^1.16.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -40,13 +43,14 @@
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "check-node": "node -e \"const v=process.versions.node;const major=parseInt(v.split('.')[0]);if(major<18||major>=24){console.error('Unsupported Node version',v);process.exitCode=1}else{console.log('Node version OK',v);}\"",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.0",
-    "rimraf": "^2.6.3"
+    "rimraf": "^4.0.0"
   },
   "keywords": [
     "gatsby",
