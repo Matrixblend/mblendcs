@@ -2,7 +2,7 @@
   "name": "gatsby-starter-eventually",
   "version": "0.0.1",
   "engines": {
-    "node": ">=18 <24"
+    "node": ">=20 <25"
   },
   "description": "Gatsby.js V2 starter template based on Eventually by HTML5 UP",
   "repository": {
@@ -43,7 +43,7 @@
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "check-node": "node -e \"const v=process.versions.node;const major=parseInt(v.split('.')[0]);if(major<18||major>=24){console.error('Unsupported Node version',v);process.exitCode=1}else{console.log('Node version OK',v);}\"",
+    "check-node": "node -e \"const v=process.versions.node;const major=parseInt(v.split('.')[0]);if(major<20||major>=25){console.error('Unsupported Node version',v);process.exitCode=1}else{console.log('Node version OK',v);}\"",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
