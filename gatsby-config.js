@@ -8,7 +8,7 @@ module.exports = {
     description: `Media that influence, Insight, Ideas, and Inspiration.`,
     keywords: "music, web, tech ",
     image: "/src/assets/images/img/website-icon.png",
-    url: "http://matrixblendmedia.com",
+    url: "https://www.matrixblend.com",
     twitterUsername: "@matrixblend",
   },
   plugins: [
